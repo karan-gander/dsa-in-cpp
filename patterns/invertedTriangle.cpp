@@ -13,8 +13,8 @@ int main(){
             cout<<" ";
         }
 
-        for(int j=0;j<n-1;j++){
-            cout<<i+1<<" ";
+        for(int j=0;j<n-i;j++){
+            cout<<i+1;
         }
         cout<<"\n";
     }

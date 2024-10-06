@@ -23,7 +23,7 @@ int main(){
     //  Home work problem
 
     char ch='A';
-    int n=4;
+    int n=4 ;
 
     for(int i=0;i<=n;i++){
 
