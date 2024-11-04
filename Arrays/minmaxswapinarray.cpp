@@ -4,25 +4,35 @@ using namespace std;
 
 void swapMinMax(int array[], int size)
 {
+    if (size < 2)
+        return;
 
-    int smallest = __INT_MAX__;
-    int largest = INT_MIN;
+    int minIndex = 0;
+    int maxIndex = 0;
 
     for (int i = 0; i < size; i++)
     {
 
-        if (smallest < array[i])
+        if (array[i]<array[minIndex])
         {
-            smallest = i;
+            minIndex = i;
         }
 
-        if (largest < array[i])
+        if (array[i]>array[maxIndex])
         {
-            largest = i;
+            maxIndex = i;
         }
     }
 
-    swap(array[smallest], array[largest]);
+    // cout<<"maxIndex"<<maxIndex;
+    // cout<<"minIndex"<<minIndex;
+
+    swap(array[minIndex], array[maxIndex]);
+
+    // for (int i = 0; i < size; i++)
+    // {
+    //     cout << array[i] << " ";
+    // }
 }
 
 int main()
